@@ -11,7 +11,6 @@
 		01D2B7592A48807B00A8E07B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2B7582A48807B00A8E07B /* ContentView.swift */; };
 		01D2B75B2A48807C00A8E07B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D2B75A2A48807C00A8E07B /* Assets.xcassets */; };
 		01D2B75E2A48807C00A8E07B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D2B75D2A48807C00A8E07B /* Preview Assets.xcassets */; };
-		01D2B7652A4880CF00A8E07B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2B7642A4880CF00A8E07B /* HomeView.swift */; };
 		01D2B7682A48A6E400A8E07B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2B7672A48A6E400A8E07B /* Task.swift */; };
 		01D2B76A2A48A70D00A8E07B /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2B7692A48A70D00A8E07B /* RealmManager.swift */; };
 		01D2B76D2A48A73600A8E07B /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2B76C2A48A73600A8E07B /* TaskListView.swift */; };
@@ -26,7 +25,6 @@
 		01D2B7582A48807B00A8E07B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01D2B75A2A48807C00A8E07B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01D2B75D2A48807C00A8E07B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		01D2B7642A4880CF00A8E07B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		01D2B7672A48A6E400A8E07B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		01D2B7692A48A70D00A8E07B /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		01D2B76C2A48A73600A8E07B /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
@@ -70,15 +68,14 @@
 		01D2B7552A48807B00A8E07B /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
-				01D2B76B2A48A72800A8E07B /* View */,
+				01D2B7722A48BA2400A8E07B /* Manager */,
 				01D2B7662A48A6D500A8E07B /* Model */,
+				01D2B76B2A48A72800A8E07B /* View */,
+				01D2B7732A48BA4300A8E07B /* ViewModel */,
 				01D2B7562A48807B00A8E07B /* ToDoAppApp.swift */,
 				01D2B7582A48807B00A8E07B /* ContentView.swift */,
 				01D2B75A2A48807C00A8E07B /* Assets.xcassets */,
 				01D2B75C2A48807C00A8E07B /* Preview Content */,
-				01D2B7642A4880CF00A8E07B /* HomeView.swift */,
-				01D2B7692A48A70D00A8E07B /* RealmManager.swift */,
-				01D2B7702A48A79000A8E07B /* TaskListViewModel.swift */,
 			);
 			path = ToDoApp;
 			sourceTree = "<group>";
@@ -106,6 +103,22 @@
 				01D2B76E2A48A76800A8E07B /* TaskRowView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		01D2B7722A48BA2400A8E07B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				01D2B7692A48A70D00A8E07B /* RealmManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		01D2B7732A48BA4300A8E07B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01D2B7702A48A79000A8E07B /* TaskListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		3C632C21195B594815AC05D1 /* Pods */ = {
@@ -240,7 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				01D2B7682A48A6E400A8E07B /* Task.swift in Sources */,
-				01D2B7652A4880CF00A8E07B /* HomeView.swift in Sources */,
 				01D2B76A2A48A70D00A8E07B /* RealmManager.swift in Sources */,
 				01D2B76F2A48A76800A8E07B /* TaskRowView.swift in Sources */,
 				01D2B7592A48807B00A8E07B /* ContentView.swift in Sources */,
